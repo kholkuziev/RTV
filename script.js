@@ -25,8 +25,27 @@ const moviesData=[
       "https://cdn.marvel.com/content/1x/maguiregarfieldholland_opt.jpg"
       , "https://media.gq.com/photos/612523b17624a4b10c7eed7d/16:9/w_1280,c_limit/14.png",
       "https://images.mubicdn.net/images/film/360584/cache-827372-1745500600/image-w1280.jpg?size=800x"]
-},
-  
+}, 
+  {
+    title:"Naruto Shippuden",
+      sliderIcon:"https://nerdarena.in/cdn/shop/articles/Naruto_Shippuden_Banner.jpg?v=1718480380&width=2048", // ⭐ SHU BO‘LSA SLIDERGA CHIQADI
+    image:"https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/Naruto_-_Shippuden_DVD_season_1_volume_1.jpg/250px-Naruto_-_Shippuden_DVD_season_1_volume_1.jpg",
+    video:["https://vk.com/video_ext.php?oid=-230696351&id=456239033&hd=2","https://vk.com/video_ext.php?oid=-231301225&id=456239149&hd=2"],
+    type: "anime",
+    genre:"Qo‘rqinchli • Fantastika",
+    desc:"Wednesday Adams yangi sarguzashtlar bilan qaytadi.",
+    actors:[
+      {name:"Jenna Ortega", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1seytGE26prWcF-DUuc59ueHN9X7dyCMJQ&s"},
+      {name:"Emma Myers", img:"https://www.famousbirthdays.com/faces/myers-emma-image.jpg"},
+      {name:"Evie Templeton", img:"https://m.media-amazon.com/images/M/MV5BMTVmNGRhMjQtYTY0ZS00ODVjLTg4Y2EtOWMyMGRjYmM0NDNmXkEyXkFqcGc@._V1_CR0,0,1023,1535_QL75_UX140_CR0,1,140,207_.jpg"}
+    ],
+    images:[
+      "https://www.hollywoodreporter.com/wp-content/uploads/2025/07/Wednesday_n_S2_E3_00_26_46_14R3-H-2025.jpg?w=1296",
+      "https://www.indiewire.com/wp-content/uploads/2025/04/WEDNESDAY_201_Unit_04963RC2.jpg?w=600&h=337&crop=1",
+      "https://www.hollywoodreporter.com/wp-content/uploads/2025/09/WEDNESDAY_203_Unit_00756RC2.jpg?w=2000&h=1126&crop=1",
+      "https://media.glamour.com/photos/6894a906af38fb5953089138/4:3/w_1440,h_1080,c_limit/WEDNESDAY%20ENID%20060825%20MAIN-Wednesday_n_S2_E1_00_49_15_04R2.jpg"
+    ]
+  } , 
   {
     title:"Wednesday 2",
       sliderIcon:"https://static0.cbrimages.com/wordpress/wp-content/uploads/2022/11/wednesday-jenna-ortega-thing-netflix.jpg?w=1200&h=675&fit=crop", // ⭐ SHU BO‘LSA SLIDERGA CHIQADI
@@ -47,13 +66,13 @@ const moviesData=[
       "https://media.glamour.com/photos/6894a906af38fb5953089138/4:3/w_1440,h_1080,c_limit/WEDNESDAY%20ENID%20060825%20MAIN-Wednesday_n_S2_E1_00_49_15_04R2.jpg"
     ]
   }
-  
 ];
 
 // ==================== DATA FILTER ====================
 const premieresData = moviesData.filter(m => m.sliderIcon);
 
 // ==================== DOM ELEMENTS ====================
+const animeContainer = document.getElementById("anime");
 const home = document.getElementById("home");
 const moviePage = document.getElementById("movie");
 const player = document.getElementById("player");
@@ -156,6 +175,11 @@ function changeEpisode(btn, src) {
   episodesDiv.querySelectorAll("button").forEach(b => b.classList.remove("active"));
   btn.classList.add("active");
 }
+
+renderCards(moviesData.filter(m => m.type === "anime").slice(0, 3), animeContainer);
+document.getElementById("allAnimeBtn").addEventListener("click", () => {
+  openListModal(moviesData.filter(m => m.type === "anime"));
+});
 
 // ==================== SHORT MODAL ====================
 function openShort(videoSrc) {
