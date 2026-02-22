@@ -1,363 +1,415 @@
 /* ==================== GENERAL ==================== */
-* {
-  box-sizing: border-box;
+
+/* Barcha elementlarning box-sizing ni border-box qilamiz (padding va border element o'lchamiga qo'shiladi) */
+* { 
+  box-sizing: border-box; 
 }
 
-body {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 400px;
-  background: #0b0b0b;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  overflow-x: hidden;
+/* Body uchun umumiy stil */
+body { 
+  margin: 0 auto; /* Body markazga joylashadi */
+  width: 100%; /* Ekran bo'ylab kenglik */
+  max-width: 400px; /* Maksimal kenglik 400px */
+  background: #0b0b0b; /* Qora fon */
+  color: #fff; /* Oq matn rangi */
+  font-family: Arial, sans-serif; /* Shrift turi */
+  overflow-x: hidden; /* Gorizontal scrollni yashiradi */
 }
 
-.hidden {
-  display: none;
+/* .hidden class li elementlarni yashiradi */
+.hidden { 
+  display: none; 
 }
 
 /* ==================== HEADER ==================== */
+
+/* Header stili */
 header {
-  padding: 15px;
-  text-align: center;
-  font-size: 22px;
-  font-weight: bold;
-  color: red;
-  position: relative;
+  padding: 15px; /* Ichki bo'shliq */
+  text-align: center; /* Matn markazga */
+  font-size: 22px; /* Matn kattaligi */
+  font-weight: bold; /* Qalin matn */
+  color: red; /* Matn rangi */
+  position: relative; /* Absolyut elementlar uchun parent */
 }
 
+/* Headerdagi qidiruv tugmasi */
 header #searchBtn {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  cursor: pointer;
+  position: absolute; /* Header ichida absolyut pozitsiya */
+  right: 15px; /* O'ngdan masofa */
+  top: 15px; /* Tepadan masofa */
+  cursor: pointer; /* Hoverda qo'l */
 }
 
 /* ==================== ROW ==================== */
-.row {
-  padding: 10px 8px;
+
+/* Qator ichki bo'shliq */
+.row { 
+  padding: 10px 8px; 
 }
 
-.row-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Qator sarlavhasi (title) */
+.row-title { 
+  display: flex; /* Flex layout */
+  justify-content: space-between; /* Elementlarni ikki tomoniga yoyish */
+  align-items: center; /* Vertikal markazlash */
 }
 
 /* ==================== SCROLL ==================== */
-.scroll {
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
-.scroll::-webkit-scrollbar {
-  display: none;
+
+/* Gorizontal scrollable container */
+.scroll { 
+  display: flex; /* Flex layout */
+  gap: 10px; /* Elementlar orasidagi bo'shliq */
+  overflow-x: auto; /* Gorizontal scroll */
+  scroll-behavior: smooth; /* Silliq scroll */
 }
 
-/* ==================== SHORTS ==================== */
-.short {
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 2px solid red;
-  flex: 0 0 auto;
-  cursor: pointer;
+/* Scroll panelni yashirish (Chrome/Webkit) */
+.scroll::-webkit-scrollbar { 
+  display: none; 
 }
-.short img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+/* ==================== SHORTS (mini videolar) ==================== */
+
+/* Short (doira) */
+.short { 
+  width: 65px; 
+  height: 65px; 
+  border-radius: 50%; /* Doira shakli */
+  overflow: hidden; /* Ichidagi tasvir tashqariga chiqmasin */
+  border: 2px solid red; /* Qizil border */
+  flex: 0 0 auto; /* Flex shrink va grow yo'q */
+  cursor: pointer; /* Hoverda qo'l */
+}
+
+/* Short ichidagi rasm */
+.short img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; /* Rasm containerga to'g'ri keladi */
 }
 
 /* ==================== PREMIERE SLIDER ==================== */
-#premieres {
-  padding: 20px 0;
-  overflow: hidden;
-  position: relative;
+
+/* Slayder container */
+#premieres { 
+  padding: 20px 0; /* Yuqoridan va pastdan bo'shliq */
+  overflow: hidden; /* Slayder tashqariga chiqmasin */
+  position: relative; /* Slayder tugmalari uchun parent */
 }
 
-#premieres-inner {
-  display: flex;
-  gap: 12px;
-  transition: transform 0.5s ease-in-out;
-  will-change: transform;
-  pointer-events: none;
+/* Slayder ichidagi kartalar qatori */
+#premieres-inner { 
+  display: flex; /* Flex layout */
+  gap: 12px; /* Kartalar orasidagi bo'shliq */
+  transition: transform 0.5s ease-in-out; /* Slayder animatsiyasi */
+  will-change: transform; /* Browser optimizatsiyasi */
+  pointer-events: none; /* Defaultda hover ishlamaydi */
 }
 
-#premieres-inner .card {
-  min-width: 380px;
-  height: 200px;
-  flex-shrink: 0;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-  transform-origin: center center;
-  pointer-events: auto;
+/* Har bir kartaning stili */
+#premieres-inner .card { 
+  min-width: 380px; 
+  height: 200px; /* Kartaning o'lchami */
+  flex-shrink: 0; /* Qisqarmaydi */
+  border-radius: 12px; /* Dumaloq burchak */
+  overflow: hidden; /* Tasvir tashqariga chiqmasin */
+  cursor: pointer; /* Hoverda qo'l */
+  transition: transform 0.35s ease, box-shadow 0.35s ease; /* Hover animatsiyasi */
+  transform-origin: center center; /* Transform markazi */
+  pointer-events: auto; /* Hover ishlaydi */
 }
 
-#premieres-inner .card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* Kartadagi rasm */
+#premieres-inner .card img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; /* Tasvir to'liq joylashadi */
 }
 
-#premieres-inner .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-  z-index: 2;
+/* Hover effekti kartada */
+#premieres-inner .card:hover { 
+  transform: scale(1.05); /* Kattalashadi */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5); /* Soyalar */
+  z-index: 2; /* Boshqa elementlarning ustida */
 }
 
 /* ==================== SLIDER BUTTONS ==================== */
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.6);
-  border: none;
-  color: #fff;
-  font-size: 22px;
-  padding: 8px 12px;
-  cursor: pointer;
-  z-index: 5;
-  border-radius: 8px;
+
+/* Slider tugmalari */
+.slider-btn { 
+  position: absolute; 
+  top: 50%; /* Vertikal markazlash */
+  transform: translateY(-50%); /* Haqiqiy markazlash */
+  background: rgba(0,0,0,0.6); /* Yarim shaffof qora fon */
+  border: none; /* Border yo'q */
+  color: #fff; /* Matn oq */
+  font-size: 22px; /* Katta belgi */
+  padding: 8px 12px; /* Ichki bo'shliq */
+  cursor: pointer; /* Hover qo'l */
+  z-index: 5; /* Kartalardan yuqorida */
+  border-radius: 8px; /* Yumaloq burchak */
 }
 
-.slider-btn.left { left: 5px; }
-.slider-btn.right { right: 5px; }
+/* Slider chap tugma */
+.slider-btn.left { 
+  left: 5px; 
+}
+
+/* Slider o'ng tugma */
+.slider-btn.right { 
+  right: 5px; 
+}
 
 /* ==================== MOVIE CARDS ==================== */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+
+/* Grid layout kartalar */
+.cards { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); /* 3 ustunli grid */
+  gap: 10px; /* Bo'shliq */
 }
 
-.card {
-  cursor: pointer;
-  font-size: 13px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+/* Har bir kartaning umumiy stili */
+.card { 
+  cursor: pointer; /* Hover qo'l */
+  font-size: 13px; /* Matn kattaligi */
+  text-align: center; /* Matn markazga */
+  display: flex; 
+  flex-direction: column; /* Vertikal layout */
 }
 
-.card img {
-  width: 120px;
-  border-radius: 15px;
-  margin-bottom: 4px;
-  transition: transform 0.3s ease;
+/* Kartadagi rasm */
+.card img { 
+  width: 120px; 
+  height: 180px; 
+  border-radius: 15px; /* Yumaloq burchak */
+  margin-bottom: 4px; 
+  transition: transform 0.3s ease; /* Hover animatsiyasi */
 }
 
-.card img:hover {
-  transform: scale(1.1);
-  z-index: 2;
+/* Kartadagi rasm hover */
+.card img:hover { 
+  transform: scale(1.1); 
+  z-index: 2; 
 }
 
-/* 🔥 TEXT FIX – 2 QATOR ELLIPSIS */
-.card div {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
-  line-height: 1.2em;
-  height: 2.4em;
+/* Matnni 2 qator bilan cheklash (ellips) */
+.card div { 
+  display: -webkit-box; 
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: normal; 
+  line-height: 1.2em; 
+  height: 2.4em; 
 }
 
 /* ==================== GENRES ==================== */
-.genre {
-  display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  padding-bottom: 5px;
-}
-.genre::-webkit-scrollbar {
-  display: none;
+
+/* Janrlar qatori */
+.genre { 
+  display: flex; 
+  gap: 8px; 
+  overflow-x: auto; /* Gorizontal scroll */
+  padding-bottom: 5px; 
 }
 
-.genre span {
-  background: #1f1f1f;
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 13px;
-  white-space: nowrap;
-  flex: 0 0 auto;
-  cursor: pointer;
+/* Scroll panelni yashirish */
+.genre::-webkit-scrollbar { 
+  display: none; 
+}
+
+/* Har bir janr elementi */
+.genre span { 
+  background: #1f1f1f; 
+  padding: 8px 14px; 
+  border-radius: 20px; 
+  font-size: 13px; 
+  white-space: nowrap; 
+  flex: 0 0 auto; 
+  cursor: pointer; 
 }
 
 /* ==================== MOVIE PAGE ==================== */
-#movie iframe {
-  width: 100%;
-  height: 225px;
-  border: none;
-  border-radius: 8px;
+
+/* Videoni joylash */
+#movie iframe { 
+  width: 100%; 
+  height: 225px; 
+  border: none; 
+  border-radius: 8px; 
 }
 
-.episodes {
-  display: flex;
-  gap: 8px;
-  padding: 10px 0;
-  overflow-x: auto;
-}
-.episodes::-webkit-scrollbar {
-  display: none;
+/* Epizodlar qatori */
+.episodes { 
+  display: flex; 
+  gap: 8px; 
+  padding: 10px 0; 
+  overflow-x: auto; 
 }
 
-.episodes button {
-  background: #1f1f1f;
-  border: none;
-  color: #fff;
-  padding: 6px 14px;
-  border-radius: 20px;
-  cursor: pointer;
+.episodes::-webkit-scrollbar { display: none; }
+
+/* Har bir epizod tugmasi */
+.episodes button { 
+  background: #1f1f1f; 
+  border: none; 
+  color: #fff; 
+  padding: 6px 14px; 
+  border-radius: 20px; 
+  cursor: pointer; 
 }
-.episodes .active {
-  background: red;
+
+/* Aktiv epizod tugmasi */
+.episodes .active { 
+  background: red; 
 }
 
 /* ==================== ACTORS ==================== */
-.actor-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 4px;
-  font-size: 12px;
+
+/* Har bir aktyor */
+.actor-item { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  margin: 4px; 
+  font-size: 12px; 
 }
 
-#movie-actors {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 10px 0;
+/* Aktyorlar grid */
+#movie-actors { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+  padding: 10px 0; 
 }
 
-.actor-item img {
-  width: 100px;
-  height: 150px;
-  border-radius: 10%;
-  object-fit: cover;
-  margin-bottom: 4px;
-  transition: transform 0.9s ease;
+/* Aktyor rasmi */
+.actor-item img { 
+  width: 100px; 
+  height: 150px; 
+  border-radius: 10%; 
+  object-fit: cover; 
+  margin-bottom: 4px; 
+  transition: transform 0.9s ease; 
 }
 
-.actor-item img:hover {
-  transform: scale(1.4);
+/* Hover effekti rasmi */
+.actor-item img:hover { 
+  transform: scale(1.4); 
 }
 
 /* ==================== MOVIE IMAGES ==================== */
-#movie-images {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 6px;
-  padding: 8px;
+#movie-images { 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 6px; 
+  padding: 8px; 
 }
 
-#movie-images img {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
+#movie-images img { 
+  width: 100%; 
+  height: 120px; 
+  object-fit: cover; 
+  border-radius: 12px; 
+  transition: transform 0.3s ease; 
 }
 
-#movie-images img:hover {
-  transform: scale(1.2);
+#movie-images img:hover { 
+  transform: scale(1.2); 
 }
 
 /* ==================== BACK BUTTON ==================== */
-.back {
-  padding: 12px;
-  color: red;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
+.back { 
+  padding: 12px; 
+  color: red; 
+  font-weight: bold; 
+  font-size: 16px; 
+  cursor: pointer; 
 }
 
 /* ==================== MODALS ==================== */
-#shortModal,
-#listModal,
-#actorModal,
-#searchModal {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 400px;
-  height: 100%;
-  background: #0b0b0b;
-  z-index: 9999;
-  display: none;
-  flex-direction: column;
-  overflow-y: auto;
-  padding: 0 10px;
+#shortModal, #listModal, #actorModal, #searchModal { 
+  position: fixed; 
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 100%; 
+  max-width: 400px; 
+  height: 100%; 
+  background: #0b0b0b; 
+  z-index: 9999; 
+  display: none; 
+  flex-direction: column; 
+  overflow-y: auto; 
+  padding: 0 10px; 
 }
 
-#shortModal {
-  background: #000;
-  justify-content: center;
-  align-items: center;
+/* Short modal */
+#shortModal { 
+  background: #000; 
+  justify-content: center; 
+  align-items: center; 
 }
 
-#shortModal video,
-#shortModal iframe {
-  width: 100%;
-  height: 100%;
+/* Video va iframe short modal ichida */
+#shortModal video, #shortModal iframe { 
+  width: 100%; 
+  height: 100%; 
 }
 
 /* ==================== MODAL GRIDS ==================== */
-#listModalContent,
-#actorMovies,
-#searchResults {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 ga bo‘linadi */
-  gap: 12px;
-  padding: 10px 0;
+#listModalContent, #actorMovies, #searchResults { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); /* 3 ustun */
+  gap: 12px; 
+  padding: 10px 0; 
 }
 
-@media (max-width: 400px) {
-  #listModalContent,
-  #actorMovies,
-  #searchResults {
-    grid-template-columns: 1fr; /* kichik ekranlarda 1 ga tushadi */
-  }
+/* Kichik ekranlarda grid 1 ustun */
+@media (max-width: 400px) { 
+  #listModalContent, #actorMovies, #searchResults { 
+    grid-template-columns: 1fr; 
+  } 
 }
 
 /* ==================== SEARCH INPUT ==================== */
-#searchModal input {
-  width: 100%;
-  padding: 12px;
-  border-radius: 12px;
-  border: none;
-  margin-bottom: 15px;
-  font-size: 15px;
+#searchModal input { 
+  width: 100%; 
+  padding: 12px; 
+  border-radius: 12px; 
+  border: none; 
+  margin-bottom: 15px; 
+  font-size: 15px; 
 }
 
-/* ==================== RESPONSIVE ==================== */
-@media(max-width:400px) {
-  header { font-size: 20px; }
+/* ==================== 1XBET BUTTON ==================== */
+.xbet-btn { 
+  position: absolute; 
+  left: 12px; 
+  top: 12px; 
+  padding: 7px 16px; 
+  border-radius: 20px; 
+  font-size: 12px; 
+  font-weight: 600; 
+  letter-spacing: 0.5px; 
+  color: #ffd700; /* Matn rangi oltin */
+  text-decoration: none; 
+  background: linear-gradient(135deg, rgba(255,215,0,0.18), rgba(255,140,0,0.18)); 
+  border: 1px solid rgba(255,215,0,0.6); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  box-shadow: 0 0 8px rgba(255,215,0,0.4), 0 0 18px rgba(255,140,0,0.25); 
+  transition: 0.35s ease; 
+}
 
-  .short {
-    width: 58px;
-    height: 58px;
-  }
-
-  #premieres-inner .card {
-    min-width: 100%;
-    height: 180px;
-  }
-
-  #movie iframe { height: 180px; }
-
-  #movie-images {
-    grid-template-columns: 1fr;
-  }
-
-  #movie-images img {
-    height: 100px;
-  }
+/* Hover effekti 1XBET button */
+.xbet-btn:hover { 
+  color: #000; 
+  background: linear-gradient(135deg, #ffd700, #ffb300); 
+  box-shadow: 0 0 12px gold, 0 0 25px orange, 0 0 35px rgba(255,215,0,0.8); 
+  transform: scale(1.07); 
 }
