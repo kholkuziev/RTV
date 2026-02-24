@@ -122,23 +122,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 </div>
 
 <script src="script.js"></script>
-<script>
-var isTelegram = navigator.userAgent.includes("Telegram");
 
-if (isTelegram) {
-  var url = "https://kholkuziev.github.io/RTV/";
-
-  // ANDROID → Chrome
-  if (/Android/i.test(navigator.userAgent)) {
-    window.location.href =
-      "intent://kholkuziev.github.io/RTV/#Intent;scheme=https;package=com.android.chrome;end";
-  }
-
-  // iPHONE → Safari yoki user default browser
-  else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-    window.location.href = url;
-  }
-}
-</script>
 </body>
 </html>
