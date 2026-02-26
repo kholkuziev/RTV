@@ -4,7 +4,7 @@ const shortsData=[
   {src:"https://i.pinimg.com/736x/a1/2a/d0/a12ad067c21daedad609a52573be6e92.jpg",video:"https://www.youtube.com/embed/5h_WslzvuC8?autoplay=1&mute=0&controls=1"}
 ];
 
-const genresData=["Jangari","Fantastika","Qo‘rqinchli","Komediya"];
+const genresData=["Jangari","Fantastika","Qo‘rqinchli","Triller","Komediya"];
 
 const moviesData=[
 {
