@@ -7,9 +7,28 @@ const shortsData=[
 const genresData=["Jangari","Fantastika","Qo‘rqinchli","Triller","Komediya"];
 
 const moviesData=[
-{title:"Bo'ysunmas 2",
- 
-    image:"https://preview.redd.it/undisputed-2-v0-pcczpx29n7mf1.png?width=640&crop=smart&auto=webp&s=aa8d1afa1e0f76b09c489844ff62d44e72870283",
+{title:"O'lmas SISU",
+   sliderIcon:"https://d6isf1yxni2j5.cloudfront.net/large_escena_sisu_1cb54705e2.jpg", // ⭐ SHU BO‘LSA SLIDERGA CHIQADI
+  image:"https://upload.wikimedia.org/wikipedia/en/c/c0/Sisu_Road_to_Revenge.jpg",
+    video:["https://vk.com/video_ext.php?oid=-186124728&id=456247864&hd=2"],
+    type:"movie",
+    genre:"Jangari • Kriminal",
+    desc:"Finlyandiya, 1944 yil. Nemislar orqalaridan kuygan tuproqni qoldirib, orqaga chekinadilar. Finlyandiyaning sobiq askari Laplandiyada oltin konini topadi, lekin uyiga qaytayotganda u fashistlar otryadiga duch keladi.",
+    actors:[
+      {name:"Jorma Tommila", img:"https://avatars.mds.yandex.net/get-kinopoisk-image/4486454/e715700d-8d13-46d6-ba44-a8c5d84c8d09/360"},
+      {name:"Stiven Lang", img:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Stephen_Lang_by_Gage_Skidmore.jpg/960px-Stephen_Lang_by_Gage_Skidmore.jpg"},
+     
+    ],
+    images:[
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZBf1g-ceYkz8C6jd58D4SbrdMjvSNzy7JCw&s", 
+      "https://cdn.kayiprihtim.com/wp-content/uploads/2025/08/Sisu-2-Ilk-Fragman.jpg", 
+       "https://muropaketti.com/wp-content/uploads/2025/10/sisu-2-stephen-lang-1024x683.jpg",
+      "https://i-viaplay-com.akamaized.net/viaplay-prod/930/308/1765443567-bf48369a318961c5224f8d40063b060972f67e04_SE.jpg?width=1600&height=900"]
+}, 
+
+  
+  {title:"Bo'ysunmas 2",
+   image:"https://preview.redd.it/undisputed-2-v0-pcczpx29n7mf1.png?width=640&crop=smart&auto=webp&s=aa8d1afa1e0f76b09c489844ff62d44e72870283",
     video:["https://vk.com/video_ext.php?oid=-186124728&id=456240289&hd=2"],
     type:"movie",
     genre:"jangari ",
