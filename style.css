@@ -361,16 +361,24 @@ header #searchBtn {
   transform: scale(1.2); 
 }
 
-/* ==================== BACK BUTTON ==================== */
-/* ==================== BACK BUTTON – SMALL PREMIUM ==================== */
-.back {
-  display: inline-flex;
+/* Barcha premium tugmalar bir xil uzunlik va balandlik */
+.back,
+#allMoviesBtn,
+#allSeriesBtn,
+#allAnimeBtn {
+  display: inline-flex;             /* Matn va icon markazlash */
   align-items: center;
+  justify-content: center;
   gap: 5px;
 
-  padding: 6px 14px;          /* kichraydi */
-  font-size: 13px;            /* matn kichikroq */
+  width: 100%;                     /* Container bilan bir xil uzunlik */
+  max-width: 120px;                /* ixtiyoriy maksimal kenglik */
+  padding: 8px 0;                  /* tepa-past ichki bo‘shliq */
+  font-size: 13px;
   font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.8px;
 
   color: #ffd700;
   cursor: pointer;
@@ -382,27 +390,31 @@ header #searchBtn {
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 
-  box-shadow:
-    0 2px 5px rgba(0,0,0,0.6),
-    0 0 5px rgba(255,215,0,0.25);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.6),
+              0 0 5px rgba(255,215,0,0.25);
 
   transition: all 0.25s ease;
 }
 
-/* Hover */
-.back:hover {
+/* Hover effekti */
+.back:hover,
+#allMoviesBtn:hover,
+#allSeriesBtn:hover,
+#allAnimeBtn:hover {
   color: #000;
   background: linear-gradient(135deg, #ffd700, #ffb300);
-  transform: translateX(-3px) scale(1.04);
+  transform: translateY(-2px) scale(1.04);
   box-shadow: 0 3px 10px rgba(255,215,0,0.55);
 }
 
-/* Active */
-.back:active {
-  transform: scale(0.94);
+/* Active effekti */
+.back:active,
+#allMoviesBtn:active,
+#allSeriesBtn:active,
+#allAnimeBtn:active {
+  transform: scale(0.95);
   box-shadow: 0 2px 5px rgba(255,215,0,0.35);
 }
-
 /* ==================== MODALS ==================== */
 #shortModal, #listModal, #actorModal, #searchModal { 
   position: fixed; 
@@ -598,4 +610,16 @@ header #searchBtn {
 /* Hoverda chiziq uzayadi */
 .row:hover h3::after {
   width: 150px;
+}
+#player {
+  width: 100vw;   /* viewport kengligi */
+  height: 56.25vw; /* 16:9 nisbat, gorizontal ekranda to‘g‘ri chiqadi */
+  max-height: 100vh;
+}
+
+@media (orientation: landscape) {
+  #player {
+    height: 100vh;
+    width: auto;
+  }
 }
