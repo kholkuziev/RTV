@@ -368,3 +368,47 @@ premieresInner.addEventListener("touchmove", e => {
   if (diff < -30) { prevBtn.click(); isDragging = false; }
 });
 premieresInner.addEventListener("touchend", () => { isDragging = false; });
+function openMoviePage(item) {
+  home.classList.add("hidden");
+  moviePage.classList.remove("hidden");
+
+  // Har doim HD (480p yoki yuqori) sifatni so‘raymiz
+  let videoSrc = item.video[0];
+  if (!videoSrc.includes("hd=")) {
+    videoSrc += videoSrc.includes("?") ? "&hd=2" : "?hd=2";
+  }
+  player.src = videoSrc;
+
+  episodesDiv.innerHTML = "";
+  if (item.video.length > 1) {
+    item.video.forEach((v, idx) => {
+      const btn = document.createElement("button");
+      btn.textContent = `${idx + 1}-qism`;
+      if (idx === 0) btn.classList.add("active");
+      btn.onclick = () => changeEpisode(btn, v);
+      episodesDiv.appendChild(btn);
+    });
+  }
+
+  movieTitle.textContent = item.title;
+  movieGenre.textContent = item.genre;
+  movieDesc.textContent = item.desc;
+
+  renderActors(item.actors);
+
+  movieImages.innerHTML = "";
+  item.images.forEach(img => {
+    const im = document.createElement("img");
+    im.src = img;
+    movieImages.appendChild(im);
+  });
+}
+
+function changeEpisode(btn, src) {
+  if (!src.includes("hd=")) {
+    src += src.includes("?") ? "&hd=2" : "?hd=2";
+  }
+  player.src = src;
+  episodesDiv.querySelectorAll("button").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+}
