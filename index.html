@@ -2,8 +2,7 @@
 <html lang="uz">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
   <!-- SITE TITLE & DESCRIPTION -->
   <title>VektorTV Kinolar premyera</title>
   <meta name="description" content="VektorTV – bepul onlayn kinolar, premyeralar va seriallar platformasi. Eng so‘nggi filmlarni tomosha qiling.">
@@ -19,7 +18,7 @@
   <!-- OPEN GRAPH / SOCIAL PREVIEW -->
   <meta property="og:title" content="VektorTV – Onlayn Kinolar Platformasi" />
   <meta property="og:description" content="VektorTV – bepul onlayn kinolar, premyeralar va seriallar platformasi. Eng so‘nggi filmlarni tomosha qiling." />
-  <meta property="og:image" content="https://kholkuziev.github.io/RTV/logo.png" /> <!-- o‘zingizning logoningiz -->
+  <meta property="og:image" content="https://kholkuziev.github.io/RTV/logo.png" />
   <meta property="og:url" content="https://kholkuziev.github.io/RTV/" />
   <meta property="og:type" content="website" />
 
@@ -28,7 +27,6 @@
   <meta name="twitter:title" content="VektorTV uzbek tilida" />
   <meta name="twitter:description" content="VektorTV – bepul onlayn kinolar, premyeralar va seriallar platformasi." />
   <meta name="twitter:image" content="https://img.freepik.com/premium-vector/logo-tv-tv_853558-657.jpg" />
-
 </head>
 <body>
   <!-- HOME PAGE -->
@@ -37,7 +35,7 @@
     <!-- HEADER -->
     <header>
       <!-- 1XBET BUTTON (Chapda) -->
-      <a href="https://1xlite-67754.pro/mobile?bf=485d0be454f64_13035772445" class="xbet-btn" target="_blank">
+      <a href="https://1xlite-85861.pro/mobile?bf=485d0be454f64_13035772445" class="premium-btn xbet-btn" target="_blank">
         <span>1XBET</span>
         <i class="fas fa-download"></i>
       </a>
@@ -68,21 +66,21 @@
     <!-- MOVIES -->
     <div class="row row-title">
       <h3>Kinolar</h3>
-      <button id="allMoviesBtn">Barchasi</button>
+      <button id="allMoviesBtn" class="premium-btn">Barchasi</button>
     </div>
     <div class="cards" id="movies"></div>
 
     <!-- SERIES -->
     <div class="row row-title">
       <h3>Seriallar</h3>
-      <button id="allSeriesBtn">Barchasi</button>
+      <button id="allSeriesBtn" class="premium-btn">Barchasi</button>
     </div>
     <div class="cards" id="series"></div>
 
     <!-- ANIME -->
     <div class="row row-title">
       <h3>Animelar</h3>
-      <button id="allAnimeBtn">Barchasi</button>
+      <button id="allAnimeBtn" class="premium-btn">Barchasi</button>
     </div>
     <div class="cards" id="anime"></div>
 
@@ -90,7 +88,7 @@
 
   <!-- MOVIE PAGE -->
   <div id="movie" class="hidden">
-    <div class="back" onclick="goHome()">← Orqaga</div>
+    <div class="back premium-btn" onclick="goHome()">← Orqaga</div>
     <iframe id="player" src="" allowfullscreen></iframe>
 
     <div class="episodes" id="episodes"></div>
@@ -117,19 +115,19 @@
 
   <!-- LIST MODAL -->
   <div id="listModal">
-    <div class="back" onclick="closeListModal()">← Orqaga</div>
+    <div class="back premium-btn" onclick="closeListModal()">← Orqaga</div>
     <div id="listModalContent" class="genre-cards"></div>
   </div>
 
   <!-- ACTOR MODAL -->
   <div id="actorModal">
-    <div class="back" onclick="closeActorModal()">← Orqaga</div>
+    <div class="back premium-btn" onclick="closeActorModal()">← Orqaga</div>
     <div id="actorMovies" class="genre-cards"></div>
   </div>
 
   <!-- SEARCH MODAL -->
   <div id="searchModal">
-    <div class="back" onclick="closeSearch()">← Orqaga</div>
+    <div class="back premium-btn" onclick="closeSearch()">← Orqaga</div>
     <input type="text" id="searchInput" placeholder="Qidiruv..." />
     <div id="searchResults" class="genre-cards"></div>
   </div>
