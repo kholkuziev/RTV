@@ -7,10 +7,28 @@ const shortsData=[
 const genresData=["Jangari","Fantastika","Qo‘rqinchli","Triller","Komediya"];
 
 const moviesData=[
-{
-  title:"O'rgimchak odam: Uyga yo'l yo'q",
-       sliderIcon:"https://www.filmfreakcentral.net/6a0168ea36d6b2970c02788060b95a200d-800wi", // ⭐ SHU BO‘LSA SLIDERGA CHIQADI
-    image:"https://i.pinimg.com/736x/78/a2/b7/78a2b784386264eefc3175b69e26077d.jpg",
+{title:"Bo'ysunmas 2",
+ 
+    image:"https://preview.redd.it/undisputed-2-v0-pcczpx29n7mf1.png?width=640&crop=smart&auto=webp&s=aa8d1afa1e0f76b09c489844ff62d44e72870283",
+    video:["https://vk.com/video_ext.php?oid=-186124728&id=456240289&hd=2"],
+    type:"movie",
+    genre:"jangari ",
+    desc:"Rossiyaga tashrifi chog'ida boks bo'yicha sobiq jahon chempioni tasodifan eng yuqori davlat amaldorlari bilan jinoiy to'qnashuvga tushib qoladi va unga qarshi soxta ish uydiriladi. Qattiq rus qamoqxonasidan o'tib, uyga qaytish uzoq va qiyin bo'ladi...",
+    actors:[
+      {name:"Maykl Jey Uayt", img:"https://24smi.org/public/media/celebrity/2022/06/22/xmhjyoz1wadt-maikl-dzhei-uait.jpg"},
+      {name:"Skott Edkins", img:"https://7days.ru/upload/images/cec/7b58c17ad47480d10a860729fa0cd.jpg"},
+     
+    ],
+    images:[
+      "https://m.media-amazon.com/images/S/pv-target-images/a99df028fd898b5d0f4fc0c20407daf5f2a76deed4f29dcff24ab02a3eb8e0aa.png", 
+      "https://live.staticflickr.com/7037/6790917890_2b0d5be86d_h.jpg", 
+       "https://upload.wikimedia.org/wikipedia/it/a/ae/Undisputed_II_-_Last_M%D0%B0n_Standing.png",
+      "https://scottadkins.com/images/undisputed-ii--last-man-standing_gallery4_main.jpg"]
+}, 
+  
+  {title:"O'rgimchak odam: Uyga yo'l yo'q",
+       sliderIcon:"https://media.vanityfair.com/photos/612508e0b105ece2f5fa7ea3/master/pass/spider-man-no-way-home-film-still-01.jpg", // ⭐ SHU BO‘LSA SLIDERGA CHIQADI
+    image:"https://freekino.net/storage/uploads/poster/orgimchak-odam-uyga-yol-yoq_1640324133.jpg",
     video:["https://vk.com/video_ext.php?oid=-230288707&id=456239244&hd=2"],
     type:"movie",
     genre:"Fantastika • Sarguzasht",
@@ -26,9 +44,9 @@ const moviesData=[
       , "https://media.gq.com/photos/612523b17624a4b10c7eed7d/16:9/w_1280,c_limit/14.png",
       "https://images.mubicdn.net/images/film/360584/cache-827372-1745500600/image-w1280.jpg?size=800x"]
 }, 
-  {
-    title:"Naruto Shippuden",
-      sliderIcon:"https://nerdarena.in/cdn/shop/articles/Naruto_Shippuden_Banner.jpg?v=1718480380&width=2048", // ⭐ SHU BO‘LSA SLIDERGA CHIQADI
+  
+  { title:"Naruto Shippuden",
+    
     image:"https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/Naruto_-_Shippuden_DVD_season_1_volume_1.jpg/250px-Naruto_-_Shippuden_DVD_season_1_volume_1.jpg",
     video:["https://vk.com/video_ext.php?oid=-230696351&id=456239033&hd=2","https://vk.com/video_ext.php?oid=-231301225&id=456239149&hd=2"],
     type: "anime",
