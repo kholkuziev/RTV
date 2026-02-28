@@ -4,10 +4,29 @@ const shortsData=[
   {src:"https://i.pinimg.com/736x/a1/2a/d0/a12ad067c21daedad609a52573be6e92.jpg",video:"https://www.youtube.com/embed/5h_WslzvuC8?autoplay=1&mute=0&controls=1"}
 ];
 
-const genresData=["Jangari","Fantastika","Qo‘rqinchli","Triller","Komediya"];
+const genresData=["Jangari","Fantastika","Qo‘rqinchli","Triller","Komediya","Harbiy"];
 
 const moviesData=[
-{title:"O'lmas SISU",
+    {title:"Harbiy Asir",
+   sliderIcon:"https://www.martialjournal.com/wp-content/uploads/2026/02/POW1.jpg", // ⭐ SHU BO‘LSA SLIDERGA CHIQADI
+  image:"https://m.media-amazon.com/images/M/MV5BN2JjMjNjNzItYWIzZS00YTliLWJjNjMtODAzYjI3ZGRmZGZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    video:["https://vk.com/video_ext.php?oid=-230237290&id=456239074&hd=2"],
+    type:"movie",
+    genre:"Jangari • Triller • Harbiy",
+    desc:"Britaniya maxsus kuchlari SAS zobiti Jeyms Rayt yaponlar tomonidan asirga olinadi va Filippindagi harbiy asirlar lagerida saqlanadi. Mashhur Bataan o'lim marshiga yuborilishidan oldin, qo'riqchilarni ko'ngilxush qilish uchun asirlarni shafqatsiz, o'lim bilan yakunlanadigan janglarda qatnashishga majbur qilishadi. Umidsiz vaziyatda qolgan Rayt o'z safdoshlari uchun so'nggi umidga aylanadi.",
+    actors:[{name:"Skott Edkins", img:"https://7days.ru/upload/images/cec/7b58c17ad47480d10a860729fa0cd.jpg"},
+    {name:"Peter Shenkoda", img:"https://resizing.flixster.com/qaCm7yxokqMo4pcGcZV7zP5PsNE=/fit-in/705x460/v2/http://media.baselineresearch.com/images/1204449/1204449_full.jpg"},
+{name:"Gabbi Garsiya", img:"https://image.tmdb.org/t/p/w500/ymGQhMZaNoCyXY4rNb2vDl4mKNT.jpg"},
+    ],
+    images:[
+      "https://keithandthemovies.com/wp-content/uploads/2025/10/pow1.png?w=750", 
+      "https://i0.wp.com/www.bulletproofaction.com/wp-content/uploads/2025/09/FightPOW.jpg?ssl=1", 
+       "https://i0.wp.com/www.bulletproofaction.com/wp-content/uploads/2025/09/CoponAdkinsPOW.jpg?ssl=1",
+      "https://m.media-amazon.com/images/M/MV5BYTQ1NzE2ZjAtMGE4Mi00N2JkLTkxM2ItOTBmZTBmMzJkYzRiXkEyXkFqcGc@._V1_.jpg"]
+}, 
+
+ 
+  {title:"O'lmas SISU",
    sliderIcon:"https://d6isf1yxni2j5.cloudfront.net/large_escena_sisu_1cb54705e2.jpg", // ⭐ SHU BO‘LSA SLIDERGA CHIQADI
   image:"https://upload.wikimedia.org/wikipedia/en/c/c0/Sisu_Road_to_Revenge.jpg",
     video:["https://vk.com/video_ext.php?oid=-186124728&id=456247864&hd=2"],
@@ -27,11 +46,11 @@ const moviesData=[
 }, 
 
   
-  {title:"Bo'ysunmas 2",
-   image:"https://preview.redd.it/undisputed-2-v0-pcczpx29n7mf1.png?width=640&crop=smart&auto=webp&s=aa8d1afa1e0f76b09c489844ff62d44e72870283",
+{title:"Bo'ysunmas 2 / Boyka",
+  image:"https://preview.redd.it/undisputed-2-v0-pcczpx29n7mf1.png?width=640&crop=smart&auto=webp&s=aa8d1afa1e0f76b09c489844ff62d44e72870283",
     video:["https://vk.com/video_ext.php?oid=-186124728&id=456240289&hd=2"],
     type:"movie",
-    genre:"jangari ",
+    genre:"Jangari ",
     desc:"Rossiyaga tashrifi chog'ida boks bo'yicha sobiq jahon chempioni tasodifan eng yuqori davlat amaldorlari bilan jinoiy to'qnashuvga tushib qoladi va unga qarshi soxta ish uydiriladi. Qattiq rus qamoqxonasidan o'tib, uyga qaytish uzoq va qiyin bo'ladi...",
     actors:[
       {name:"Maykl Jey Uayt", img:"https://24smi.org/public/media/celebrity/2022/06/22/xmhjyoz1wadt-maikl-dzhei-uait.jpg"},
