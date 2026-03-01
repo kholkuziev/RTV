@@ -7,13 +7,30 @@ const shortsData=[
 const genresData=["Jangari","Fantastika","Qo‘rqinchli","Kriminal","Triller","Komediya","Harbiy"];
 
 const moviesData=[
+   { title:"Yengilmas / Invinsible",
+      sliderIcon:"https://miro.medium.com/1*TQusJA0dGM2IA7H_VrqOsw.jpeg", // ⭐ SHU BO‘LSA SLIDERGA CHIQADI
+    image:"https://upload.wikimedia.org/wikipedia/en/0/09/Invincible_season_2_Poster.jpg",
+    video:["https://vk.com/video_ext.php?oid=-230696351&id=456239035&hd=2","https://vk.com/video_ext.php?oid=-231301225&id=456239149&hd=2"],
+    type:"anime",
+    genre:"Triller • Jangari • Fantastika",
+    desc:"17 yoshli Mark Greyson er yuzidagi eng kuchli superqahramonning o'g'lidir va tez orada uning o'zi ham super kuchlarga ega bo'lishi va ularni boshqarishni o'rganishi kerak.",
+    actors:[
+ 
+    ],
+    images:[
+      "https://images.immediate.co.uk/production/volatile/sites/3/2021/03/Omni-Man-6c9cb30.jpg",
+      "https://static0.moviewebimages.com/wordpress/wp-content/uploads/2025/02/invincible-season-3-white-room-turns-red.jpg?w=1200&h=675&fit=crop",
+      "https://static0.thegamerimages.com/wordpress/wp-content/uploads/2023/09/invinciblemark.jpg",
+"https://pbs.twimg.com/media/G_NLJNRWsAA-AVj.jpg"
+    ]},  
+  
   { title:"Godzilla Monarx maxluqlar merosi ",
       sliderIcon:"https://img.kinochilar.com/uploads/posts/2023-12/6532c9061ce0c.jpg", // ⭐ SHU BO‘LSA SLIDERGA CHIQADI
     image:"https://thumb.cineserie.com/media/265449/2641354.jpg",
     video:["https://vk.com/video_ext.php?oid=-230696351&id=456239034&hd=2","https://vk.com/video_ext.php?oid=-231301225&id=456239149&hd=2"],
     type:"series",
     genre:"Qo‘rqinchli • Fantastika",
-    desc:"Wednesday Adams yangi sarguzashtlar bilan qaytadi.",
+    desc:"Godzillaning San-Frantsiskoga hujumidan omon qolgan Keyt yana bir bor hayratlanarli sirdan hayratda qoladi. U oilasi va Monarx deb nomlanuvchi sirli tashkilot haqidagi haqiqatni bilish uchun dunyo bo'ylab sayohatga chiqadi.",
     actors:[
       {name:"Anna Savai", img:"https://resizer.mail.ru/p/3dbc925e-19fe-5232-b847-b8ee7baf84cc/AQACt46txLyG1S8bMzUBWO0etal2-8A_Dt1zjK4z0gqnfbWhso-y9qVTyay0PRrJ0XwIJxsQAtJ4x9Z3xzFtCwdU4Rk.jpg"},
       {name:"Wyatt Russell", img:"https://image.tmdb.org/t/p/original/tOodupCDElZitKwOy7NkmQaltDc.jpg"},
