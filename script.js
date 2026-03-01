@@ -4,9 +4,47 @@ const shortsData=[
   {src:"https://i.pinimg.com/736x/a1/2a/d0/a12ad067c21daedad609a52573be6e92.jpg",video:"https://www.youtube.com/embed/5h_WslzvuC8?autoplay=1&mute=0&controls=1"}
 ];
 
-const genresData=["Jangari","Fantastika","Qo‘rqinchli","Triller","Komediya","Harbiy"];
+const genresData=["Jangari","Fantastika","Qo‘rqinchli","Kriminal","Triller","Komediya","Harbiy"];
 
 const moviesData=[
+  { title:"Godzilla Monarx maxluqlar merosi ",
+      sliderIcon:"https://img.kinochilar.com/uploads/posts/2023-12/6532c9061ce0c.jpg", // ⭐ SHU BO‘LSA SLIDERGA CHIQADI
+    image:"https://thumb.cineserie.com/media/265449/2641354.jpg",
+    video:["https://vk.com/video_ext.php?oid=-230696351&id=456239034&hd=2","https://vk.com/video_ext.php?oid=-231301225&id=456239149&hd=2"],
+    type:"series",
+    genre:"Qo‘rqinchli • Fantastika",
+    desc:"Wednesday Adams yangi sarguzashtlar bilan qaytadi.",
+    actors:[
+      {name:"Anna Savai", img:"https://resizer.mail.ru/p/3dbc925e-19fe-5232-b847-b8ee7baf84cc/AQACt46txLyG1S8bMzUBWO0etal2-8A_Dt1zjK4z0gqnfbWhso-y9qVTyay0PRrJ0XwIJxsQAtJ4x9Z3xzFtCwdU4Rk.jpg"},
+      {name:"Wyatt Russell", img:"https://image.tmdb.org/t/p/original/tOodupCDElZitKwOy7NkmQaltDc.jpg"},
+      {name:"Kurt Russel", img:"https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/d2b487a3-a38e-4cf8-ac4e-081c1521fb5a/360"}
+    ],
+    images:[
+      "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25144523/Monarch_Legacy_of_Monsters_Photo_010315.jpg",
+      "https://www.4pareteita.it/wp-content/uploads/2024/04/Monarch-Legacy-Of-Monsters-confermata-la-seconda-stagione.jpg",
+      "https://www.indiewire.com/wp-content/uploads/2023/11/Monarch-Legacy-of-Monsters-Godzilla-TV-show-e1700258855502.jpg",
+"https://vfxvoice.com/wp-content/uploads/2024/02/PIX-23-HRG_102_48_0040_x1179.jpg"
+    ]
+  },  
+  
+   {title:"Shavqat",
+   sliderIcon:"https://external-preview.redd.it/mercy-2026-v0-Quem9REyvU-ct60ZHxjL5Gf2xKafX_tksZtAvKPHLM4.jpeg?auto=webp&s=33e53d4ca581f18d248e3b0d1bec8277d01ded9e", // ⭐ SHU BO‘LSA SLIDERGA CHIQADI
+  image:"https://regalcdn.azureedge.net/CW/Mercy/HO00014089/TV_SmallPosterImage/20251217-114928385.jpg",
+    video:["https://vk.com/video_ext.php?oid=-232370190&id=456239063&hd=2"],
+    type:"movie",
+    genre:"Jangari • Kriminal • Fantastika",
+    desc:"Yaqin kelajak, Los-Anjeles. Politsiyachi Kris Reyven o‘z xotinini o‘ldirishda ayblanib hibsga olinadi. 90 daqiqa ichida Kris sudya va jallod vazifasini bajaruvchi ilg‘or sun’iy intellektga o‘zining aybsizligini isbotlashi kerak.",
+    actors:[{name:"Chris Pratt", img:"https://avatars.mds.yandex.net/get-afishanew/29882/16e60a49ab5327f0620f0d0e1985b80a/orig"},
+    {name:"Rebecca Ferguson", img:"https://znaydaydzest.ru/wp-content/uploads/2021/12/aktrisa-rebekka-fergyuson-3.jpg"},
+{name:"Annabelle Wallis", img:"https://www.film.ru/sites/default/files/styles/thumb_260x320/public/people/1557550-1111704.jpg"},
+    ],
+    images:[
+      "https://www.kinonews.ru/insimgs/2025/shotimg/shotimg137205_5.webp", 
+      "https://www.flickeringmyth.com/chris-pratt-faces-trial-by-ai-in-trailer-for-sci-fi-thriller-mercy/mercy_day2_41624_01243_r/", 
+       "https://media.outnow.ch/Movies/Bilder/2026/Mercy/009.jpg",
+      "https://www.vitalthrills.com/wp-content/uploads/2025/10/mercynycc2.jpg"]
+}, 
+  
     {title:"Harbiy Asir",
    sliderIcon:"https://www.martialjournal.com/wp-content/uploads/2026/02/POW1.jpg", // ⭐ SHU BO‘LSA SLIDERGA CHIQADI
   image:"https://m.media-amazon.com/images/M/MV5BN2JjMjNjNzItYWIzZS00YTliLWJjNjMtODAzYjI3ZGRmZGZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
@@ -31,7 +69,7 @@ const moviesData=[
   image:"https://upload.wikimedia.org/wikipedia/en/c/c0/Sisu_Road_to_Revenge.jpg",
     video:["https://vk.com/video_ext.php?oid=-186124728&id=456247864&hd=2"],
     type:"movie",
-    genre:"Jangari • Kriminal",
+    genre:"Jangari • Kriminal • Harbiy",
     desc:"Finlyandiya, 1944 yil. Nemislar orqalaridan kuygan tuproqni qoldirib, orqaga chekinadilar. Finlyandiyaning sobiq askari Laplandiyada oltin konini topadi, lekin uyiga qaytayotganda u fashistlar otryadiga duch keladi.",
     actors:[
       {name:"Jorma Tommila", img:"https://avatars.mds.yandex.net/get-kinopoisk-image/4486454/e715700d-8d13-46d6-ba44-a8c5d84c8d09/360"},
@@ -83,25 +121,7 @@ const moviesData=[
       "https://images.mubicdn.net/images/film/360584/cache-827372-1745500600/image-w1280.jpg?size=800x"]
 }, 
   
-  { title:"Naruto Shippuden",
-    
-    image:"https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/Naruto_-_Shippuden_DVD_season_1_volume_1.jpg/250px-Naruto_-_Shippuden_DVD_season_1_volume_1.jpg",
-    video:["https://vk.com/video_ext.php?oid=-230696351&id=456239033&hd=2","https://vk.com/video_ext.php?oid=-231301225&id=456239149&hd=2"],
-    type: "anime",
-    genre:"Qo‘rqinchli • Fantastika",
-    desc:"Wednesday Adams yangi sarguzashtlar bilan qaytadi.",
-    actors:[
-      {name:"Jenna Ortega", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1seytGE26prWcF-DUuc59ueHN9X7dyCMJQ&s"},
-      {name:"Emma Myers", img:"https://www.famousbirthdays.com/faces/myers-emma-image.jpg"},
-      {name:"Evie Templeton", img:"https://m.media-amazon.com/images/M/MV5BMTVmNGRhMjQtYTY0ZS00ODVjLTg4Y2EtOWMyMGRjYmM0NDNmXkEyXkFqcGc@._V1_CR0,0,1023,1535_QL75_UX140_CR0,1,140,207_.jpg"}
-    ],
-    images:[
-      "https://www.hollywoodreporter.com/wp-content/uploads/2025/07/Wednesday_n_S2_E3_00_26_46_14R3-H-2025.jpg?w=1296",
-      "https://www.indiewire.com/wp-content/uploads/2025/04/WEDNESDAY_201_Unit_04963RC2.jpg?w=600&h=337&crop=1",
-      "https://www.hollywoodreporter.com/wp-content/uploads/2025/09/WEDNESDAY_203_Unit_00756RC2.jpg?w=2000&h=1126&crop=1",
-      "https://media.glamour.com/photos/6894a906af38fb5953089138/4:3/w_1440,h_1080,c_limit/WEDNESDAY%20ENID%20060825%20MAIN-Wednesday_n_S2_E1_00_49_15_04R2.jpg"
-    ]
-  } , 
+
   {
     title:"Wednesday 2",
       sliderIcon:"https://static0.cbrimages.com/wordpress/wp-content/uploads/2022/11/wednesday-jenna-ortega-thing-netflix.jpg?w=1200&h=675&fit=crop", // ⭐ SHU BO‘LSA SLIDERGA CHIQADI
